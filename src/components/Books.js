@@ -3,14 +3,17 @@ import {connect} from 'react-redux'
 import Book from './Book'
 
 
-const Books = ({books}) => {
-   return books.map((book, index) => <Book book={book} key={index}></Book>)
+const Books = ({myBook}) => {
+    if(!myBook.lenght){
+        return <p>Книг пока что нет..</p>
+    }
+   return myBook.map((book, index) => <Book book={book} key={index}></Book>)
 }
 
 const mapStateToProps = state => {
     console.log(state)
     return {
-        syncBook : state.books.books
+        myBook : state.books.books
     }
 }
 

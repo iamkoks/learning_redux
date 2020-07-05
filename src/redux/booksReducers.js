@@ -1,7 +1,14 @@
+import { CREATE_BOOK } from "./types"
+
 const initialState = {
     books: []
 }
 
 export const booksReducer = (state = initialState, action) => {
-    return state
+    switch(action.type){
+        case CREATE_BOOK: 
+            return {...state, books: [...state.books, action.payload]}
+        default: return state
+    }
+    
 }

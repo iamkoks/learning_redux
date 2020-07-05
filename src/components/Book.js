@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Book = ({book}) => {
+const Book = (props) => {
    return (
        <div className="card">
            <div className="card-body">
-                <h5 className="card-title">Title here{book.title}</h5>
+                <h5 className="card-title">Title here{props.book}</h5>
            </div>
        </div>
    ) 

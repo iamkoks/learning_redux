@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
         <BookAdd></BookAdd>
-        <Books books={[1,2,3]}></Books>
+        <Books></Books>
     </div>
   );
 }

@@ -23,6 +23,7 @@ function BookEnd(){
                 });
                 setBook(books);
                 setValueBook('');
+                console.log(books.map(name => (name)))
             }
             else if(clickAdd && indexChange >= 0){
                 books.splice(indexChange, 1, {name: valueBook})
@@ -63,8 +64,7 @@ function BookEnd(){
             
     return(
         <div>
-            <input value={valueBook} onChange={(e) => setValueBook(e.target.value)} style={{width: '440px', marginLeft: '30px', marginTop: '10px'}}>
-            </input>
+            <input value={valueBook} onChange={(e) => setValueBook(e.target.value)}></input>
             <button onClick={() => Add()}>{ (indexChange>=0) ? "Изменить" : "Добавить"}</button>
         </div>   
     )
