@@ -7,7 +7,7 @@ const initialState = {
 export const booksReducer = (state = initialState, action) => {
     switch(action.type){
         case CREATE_BOOK: 
-            return {...state, books: [...state.books, action.payload]}
+            return {...state, books: state.books.concat(action.payload)}
         default: return state
     }
     

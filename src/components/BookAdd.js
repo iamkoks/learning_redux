@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import {connect} from 'react-redux'
+import { createBook } from '../redux/actions';
 
-function BookEnd(){
+function BookAdd(props){
 
         const[books, setBook] = useState(
         [
@@ -23,30 +25,10 @@ function BookEnd(){
                 });
                 setBook(books);
                 setValueBook('');
-                console.log(books.map(name => (name)))
-            }
-            else if(clickAdd && indexChange >= 0){
-                books.splice(indexChange, 1, {name: valueBook})
-                setBook(books);
-                setIndexChange(-1);
-                setValueBook('');
+                props.createBook(books)
             }
             setAddClick(false);
         }, [clickAdd])
-
-        useEffect(() => {
-            if (indexDelete>=0) {
-                books.splice(indexDelete, 1)
-                setBook(books);
-                setIndexDelete(-1);
-            }
-        }, [indexDelete])
-
-        useEffect(() => {
-            if (indexChange>=0) {
-                setValueBook(books[indexChange].name)
-            }
-        }, [indexChange])
 
         const Add = () => {
             if(!valueBook)
@@ -69,5 +51,8 @@ function BookEnd(){
         </div>   
     )
 }
+const mapDispatchToProps = {
+    createBook: createBook
+}
 
-export default BookEnd;
+export default connect(null, mapDispatchToProps)(BookAdd);

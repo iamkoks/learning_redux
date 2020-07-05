@@ -11,7 +11,6 @@ const Books = ({myBook}) => {
 }
 
 const mapStateToProps = state => {
-    console.log(state)
     return {
         myBook : state.books.books
     }
