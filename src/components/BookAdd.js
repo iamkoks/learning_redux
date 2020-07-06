@@ -3,14 +3,6 @@ import {connect} from 'react-redux'
 import { createBook } from '../redux/actions';
 
 function BookAdd(props){
-
-        const[books, setBook] = useState(
-        [
-            {
-                name: "Война и Мир"
-            }
-        ]
-        )
         
         const[valueBook, setValueBook] = useState('');
         const [clickAdd, setAddClick] = useState(false);
@@ -20,12 +12,10 @@ function BookAdd(props){
 
         useEffect(() => {
             if (clickAdd && indexChange < 0) {
-                books.push({
-                    name: valueBook
-                });
-                setBook(books);
                 setValueBook('');
-                props.createBook(books)
+                props.createBook({
+                    name: valueBook
+                })
             }
             setAddClick(false);
         }, [clickAdd])

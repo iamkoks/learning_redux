@@ -1,7 +1,9 @@
 import { CREATE_BOOK } from "./types"
 
 const initialState = {
-    books: []
+    books: [
+        {name: "Война и Мир"}
+    ]
 }
 
 export const booksReducer = (state = initialState, action) => {

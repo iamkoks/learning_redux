@@ -4,7 +4,7 @@ import Book from './Book'
 
 
 const Books = ({myBook}) => {
-    if(!myBook.lenght){
+    if(!myBook.length){
         return <p>Книг пока что нет..</p>
     }
    return myBook.map((book, index) => <Book book={book} key={index}></Book>)
