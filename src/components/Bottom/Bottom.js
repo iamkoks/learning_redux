@@ -5,9 +5,7 @@ import './Bottom.scss'
 const Bottom = () => {
    return (
     <footer>
-        <div>
-            <a className="link">Библиотека, 2020</a>
-        </div>
+        Copyright Кристина Ветрова
     </footer>
     
    ) 

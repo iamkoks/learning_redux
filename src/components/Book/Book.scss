@@ -1,0 +1,10 @@
+.book-card {
+    margin-left: 40px;
+    display: flex;
+    .ant-card {
+        width: 240px;
+    }
+    img {
+        height: 300px;
+    }
+}
