@@ -3,6 +3,8 @@ import Books from './components/Books/Books'
 import Header from './components/Header/Header';
 import 'antd/dist/antd.css';
 
+import './App.scss'
+
 function App() {
   return (
     <div className="container">
