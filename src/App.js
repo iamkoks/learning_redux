@@ -1,11 +1,12 @@
 import React from 'react';
-import Books from './components/Books'
-import BookAdd from './components/BookAdd'
+import Books from './components/Books/Books'
+import Header from './components/Header/Header';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
     <div className="container">
-        <BookAdd></BookAdd>
+        <Header></Header>
         <Books></Books>
     </div>
   );

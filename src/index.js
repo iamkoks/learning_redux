@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import {compose, createStore} from 'redux';
-import {reducer} from './redux/reducer';
+import {reducer} from './store/reducers/reducer';
 import {Provider} from 'react-redux'
 
 const store = createStore(reducer, compose(
