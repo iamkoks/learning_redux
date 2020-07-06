@@ -1,0 +1,12 @@
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .slick-dots {
+        top: 2000px !important;
+    }
+    img{
+        height: 300px;
+    }   
+}
