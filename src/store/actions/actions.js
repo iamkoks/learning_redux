@@ -1,4 +1,4 @@
-import { CREATE_BOOK } from "./types";
+import { CREATE_BOOK } from "../types/types";
 
 export function createBook(book) {
     return {
