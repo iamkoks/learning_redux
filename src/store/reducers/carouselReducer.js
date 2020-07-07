@@ -4,15 +4,15 @@ const initialState = {
     carousels: [
         { 
             name: "1",
-            img: "https://i0.wampi.ru/2020/07/06/10877602_0.jpg"
+            img: "https://s5-goods.ozstatic.by/2000/389/685/10/10685389_0.jpg"
         },
         { 
             name: "2",
-            img: "https://i2.wampi.ru/2020/07/06/31689_140413.jpg"
+            img: "https://s3-goods.ozstatic.by/2000/784/582/10/10582784_0.jpg"
         },
         {   
             name: "3",
-            img: "https://ia.wampi.ru/2020/07/06/978-5-389-01666-8.jpg"
+            img: "https://s3-goods.ozstatic.by/480/134/614/10/10614134_0_Tonkoe_iskusstvo_pofigizma_Paradoksalniy_sposob_zhit_schastlivo_Mark_Menson.jpg"
         }
     ]
 }
