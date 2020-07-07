@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Book from '../Book/Book'
 
+import Book from '../Book/Book'
 import './Books.scss'
 
 

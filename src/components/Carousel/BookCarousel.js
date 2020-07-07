@@ -1,6 +1,7 @@
 import React from 'react'
-import { Carousel } from 'antd';
 import { connect } from 'react-redux'
+
+import { Carousel } from 'antd';
 import CarouselSlide from './CarouselSlide';
 
 

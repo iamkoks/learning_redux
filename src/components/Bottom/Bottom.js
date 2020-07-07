@@ -1,10 +1,10 @@
 import React from 'react'
-import { Tag } from 'antd';
+
 import {
     GithubOutlined,
     MessageOutlined
 } from '@ant-design/icons';
-import { Typography } from 'antd';
+import { Typography, Tag } from 'antd';
 import './Bottom.scss'
 
 const { Text } = Typography;

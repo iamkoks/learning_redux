@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './BookTitle.scss'
 import { Typography } from 'antd';
 
