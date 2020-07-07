@@ -1,4 +1,5 @@
-import { CREATE_BOOK, GET_CAROUSEL, GET_MODAL} from "../types/types";
+import { CREATE_BOOK, GET_CAROUSEL, GET_MODAL } from "../types/types";
+
 
 export function createBook(book) {
     return {

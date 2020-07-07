@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 
 
 function BookModal(props){
-    
     const[visibleModal, setVisibleModal] = useState(false);
 
     const showModal = () => {
@@ -18,15 +17,20 @@ function BookModal(props){
     const handleOk = () => {
         setVisibleModal(false)
     }    
-      
+
     return(
         <div>
-            <Button type="primary" shape="circle" icon={<SearchOutlined />} onClick={() => showModal()}/>
+            <Button 
+                type="primary" 
+                shape="circle" 
+                icon={<SearchOutlined />} 
+                onClick={() => showModal()}
+            />
             <Modal
-            title={props.name}
-            visible={visibleModal}
-            onOk={() => handleOk()}
-            onCancel={() => handleCancel()}
+                title={props.name}
+                visible={visibleModal}
+                onOk={() => handleOk()}
+                onCancel={() => handleCancel()}
             >
                 <p>Автор: {props.author}</p>
                 <p>{props.about}</p>

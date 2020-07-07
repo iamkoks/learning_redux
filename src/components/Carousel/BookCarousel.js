@@ -1,11 +1,14 @@
 import React from 'react'
 import { Carousel } from 'antd';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import CarouselSlide from './CarouselSlide';
 
-const BookCarousel = ({myCarousel}) => {
+
+const BookCarousel = ({ myCarousel }) => {
     return (
-    <Carousel autoplay={true}>{myCarousel.map((slide, index) => <CarouselSlide slide={slide} key={index}></CarouselSlide>)}</Carousel>
+        <Carousel autoplay={true}>
+            {myCarousel.map((slide, index) => <CarouselSlide slide={slide} key={index}/>)}
+        </Carousel>
     )
 }
 

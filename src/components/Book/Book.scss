@@ -1,11 +1,13 @@
 .book-card {
-    margin-left: 40px;
+    margin: 0 47px;
     display: flex;
+    
     .ant-card {
         width: 250px;
         margin-top: 20px;
         
     }
+    
     img {
         height: 300px;
     }
@@ -13,7 +15,7 @@
 
 .ant-btn-circle{
     margin-top: 10px;
-    margin-left: 185px;
+    margin-left: 180px;
 }
 
 .ant-card-bordered {
