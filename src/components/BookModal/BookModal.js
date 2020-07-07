@@ -29,6 +29,7 @@ function BookModal(props){
             onCancel={() => handleCancel()}
             >
                 <p>Автор: {props.author}</p>
+                <p>{props.about}</p>
             </Modal>
         </div>  
     )

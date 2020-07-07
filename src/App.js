@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Bottom from './components/Bottom/Bottom';
 import BookCarousel from './components/Carousel/BookCarousel';
 import BookTitle from './components/BookTitle/BookTitle'
+import { BackTop } from 'antd';
 import 'antd/dist/antd.css';
 
 import './App.scss'
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="container">
       <div>
+        <BackTop/>
         <Header></Header>
         <BookTitle className="mainTitle" type="code" text="Бестеллеры, которые стоит прочитать каждому!"></BookTitle>
         <BookCarousel></BookCarousel>
