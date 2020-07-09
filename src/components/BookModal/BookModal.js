@@ -17,14 +17,14 @@ function BookModal(props){
 
     const handleOk = () => {
         setVisibleModal(false)
-    }    
+    }
 
     return(
         <div>
-            <Button 
-                type="primary" 
-                shape="circle" 
-                icon={<SearchOutlined />} 
+            <Button
+                type="primary"
+                shape="circle"
+                icon={<SearchOutlined />}
                 onClick={() => showModal()}
             />
             <Modal
@@ -36,7 +36,7 @@ function BookModal(props){
                 <p>Автор: {props.author}</p>
                 <p>{props.about}</p>
             </Modal>
-        </div>  
+        </div>
     )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './BookTitle.scss'
 import { Typography } from 'antd';
 
@@ -11,7 +10,7 @@ const BookTitle = (props) => {
         <div className="mainTitle">
             <Text code>{props.text}</Text>
         </div>
-    )     
+    )
 }
 
 export default BookTitle

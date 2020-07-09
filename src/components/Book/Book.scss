@@ -1,23 +1,28 @@
 .book-card {
-    margin: 0 47px;
+    margin-left: 40px;
     display: flex;
 
     .ant-card {
         width: 250px;
         margin-top: 20px;
-
     }
 
     img {
         height: 300px;
     }
+
+    .ant-btn-primary{
+        margin-bottom: 10px;
+        margin-left: 175px;
+
+        a {
+            color: white !important;
+        }
+    }
+
+    .ant-card-bordered {
+        border: 5px solid #f0f0f0 !important;
+    }
 }
 
-.ant-btn-circle{
-    margin-top: 10px;
-    margin-left: 180px;
-}
 
-.ant-card-bordered {
-    border: 5px solid #f0f0f0 !important;
-}

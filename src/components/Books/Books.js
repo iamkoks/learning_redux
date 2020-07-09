@@ -12,7 +12,7 @@ const Books = ({ myBook }) => {
     return (
         <div className="books-card">
             {myBook.map((book, index) => <Book book={book} key={index}/>)}
-        </div> 
+        </div>
     )
 }
 

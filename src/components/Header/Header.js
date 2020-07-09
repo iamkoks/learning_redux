@@ -15,7 +15,7 @@ const Header = () => {
                 subTitle="Читать, это круто!"
             />
         </div>
-    ) 
+    )
 }
 
 export default Header
