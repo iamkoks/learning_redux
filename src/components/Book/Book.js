@@ -14,14 +14,14 @@ const Book = (props) => {
                 hoverable
                 cover={<img alt="example" src={props.book.cover} />}
             >
-                <BookModal 
-                    name={props.book.name} 
-                    author={props.book.author} 
+                <BookModal
+                    name={props.book.name}
+                    author={props.book.author}
                     about={props.book.about}
                 />
-                <Meta 
-                    title={props.book.name} 
-                    description={"Автор: "+props.book.author} 
+                <Meta
+                    title={props.book.name}
+                    description={"Автор: "+props.book.author}
                 />
             </Card>
         </div>
