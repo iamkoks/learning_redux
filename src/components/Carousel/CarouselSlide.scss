@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     .slick-dots {
         top: 2000px !important;
@@ -10,5 +12,22 @@
 
     img{
         height: 500px;
+        -webkit-box-shadow:
+		inset 0 0 2px rgba(0,0,0,.8),
+		inset 0 2px 0 rgba(255,255,255,.5),
+		inset 0 -7px 0 rgba(0,0,0,.6),
+		inset 0 -9px 0 rgba(255,255,255,.3);
+	    -moz-box-shadow:
+		inset 0 0 2px rgba(0,0,0,.8),
+		inset 0 2px 0 rgba(255,255,255,.5),
+		inset 0 -7px 0 rgba(0,0,0,.6),
+		inset 0 -9px 0 rgba(255,255,255,.3);
+	    box-shadow: inset 0 0 2px rgba(0,0,0,.8),
+		inset 0 2px 0 rgba(255,255,255,.5),
+		inset 0 -7px 0 rgba(0,0,0,.6),
+		inset 0 -9px 0 rgba(255,255,255,.3);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
     }   
 }
