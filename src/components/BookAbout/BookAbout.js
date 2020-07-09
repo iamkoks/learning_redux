@@ -3,7 +3,9 @@ import { Typography, Button } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 
-const { Text } = Typography;
+import './BookAbout.scss'
+
+const { Title, Text } = Typography;
 
 
 const AboutBook = () => {
@@ -15,7 +17,12 @@ const AboutBook = () => {
                         >
                             <Link to="/">Вернуться</Link>
                         </Button>
-                        <Text code>Название книги</Text>
+                        <div>
+                            <Title>Название книги</Title>
+                            <img src="https://s3-goods.ozstatic.by/2000/784/582/10/10582784_0.jpg"></img>
+                            <Text>О книге</Text>
+                            <Text>Автор</Text>
+                        </div>
                     </div>
        
     )     

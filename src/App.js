@@ -18,7 +18,7 @@ import './App.scss'
 
 function App() {
     return (
-        <HashRouter>
+       
             <div className="container">
                 <div>
                     <BackTop/>
@@ -29,19 +29,12 @@ function App() {
                         text="Бестеллеры, которые стоит прочитать каждому!"
                     />
                     <BookCarousel/>
-                    <Switch>
-                        <Route path="/about">
-                            <AboutBook/>
-                        </Route>
-                        <Route exact path="/">
-                            <Books/>
-                        </Route>
-                    </Switch>  
+                    <Books/>
+                      
                 </div>
                 
                 <Bottom/>
             </div>
-        </HashRouter>
     );
 }
 

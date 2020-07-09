@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux'
 
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
@@ -7,7 +8,6 @@ import { Card } from 'antd';
 import './Book.scss'
 
 const { Meta } = Card;
-
 
 const Book = (props) => {
     return (
@@ -20,7 +20,7 @@ const Book = (props) => {
                         type="primary" 
                         icon={<SearchOutlined />} 
                     >
-                        <Link to="/about">Просмотреть</Link>
+                        <Link to={`/about/${props.book.id}`}>Просмотреть</Link>
                     </Button>
                     <Meta 
                         title={props.book.name} 
