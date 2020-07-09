@@ -23,11 +23,6 @@ function App() {
                 <div>
                     <BackTop/>
                     <Header/>
-                    <BookTitle 
-                        className="mainTitle" 
-                        type="code" 
-                        text="Бестеллеры, которые стоит прочитать каждому!"
-                    />
                     <BookCarousel/>
                     <Books/>
                       

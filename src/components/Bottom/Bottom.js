@@ -15,11 +15,11 @@ const Bottom = () => {
         <footer className='footer'>
             <div className="link">
                 <Tag icon={<GithubOutlined />} color="black">
-                    <a>GitHub</a>
+                    <a href="https://github.com/iamkoks">GitHub</a>
                 </Tag>
                 <Text mark>created by iamkoksss</Text>
                 <Tag icon={<MessageOutlined />} color="#55acee">
-                    <a>Telegram</a>
+                    <a href="https://t.me/iamkoksss">Telegram</a>
                 </Tag>
             </div>       
         </footer>
