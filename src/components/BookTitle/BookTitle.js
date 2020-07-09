@@ -10,7 +10,7 @@ const BookTitle = (props) => {
         <div className="mainTitle">
             <Text code>{props.text}</Text>
         </div>
-    )     
+    )
 }
 
 export default BookTitle

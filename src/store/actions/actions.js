@@ -1,4 +1,4 @@
-import { CREATE_BOOK, GET_CAROUSEL, GET_MODAL } from "../types/types";
+import { CREATE_BOOK, GET_CAROUSEL, GET_MODAL, GET_BOOK_BY_ID } from "../types/types";
 
 
 export function createBook(book) {
@@ -19,5 +19,12 @@ export function getModal(modal) {
     return {
         type: GET_MODAL,
         payload: modal
+    }
+}
+
+export function getBookById(bookId) {
+    return {
+        type: GET_BOOK_BY_ID,
+        payload: bookId
     }
 }

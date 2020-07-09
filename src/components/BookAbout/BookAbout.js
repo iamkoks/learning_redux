@@ -1,30 +1,47 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
+import {connect} from 'react-redux'
 
 import { Typography, Button } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import './BookAbout.scss'
+import { getBookById } from '../../store/actions/actions'
 
 const { Title, Text } = Typography;
 
 
-const AboutBook = () => {
+const AboutBook = (props) => {
+    useEffect(()=> {
+        props.getBookById(props.match.params.bookId)
+    }, [])
+
     return (
         <div className="about-book">
-            <Button 
-                type="primary" 
-                icon={<ArrowLeftOutlined />} 
-            >
-                <Link to="/">Вернуться</Link>
-            </Button>
+            <Link to="/">
+                <Button
+                    type="primary"
+                    icon={<ArrowLeftOutlined />}
+                />
+            </Link>
             <div>
-                <Title>Название книги</Title>
-                <img src="https://s3-goods.ozstatic.by/2000/784/582/10/10582784_0.jpg"></img>
-                <Text>О книге</Text>
-                <Text>Автор</Text>
+                <Title>{props.book?.name}</Title>
+                <img src={props.book?.cover} alt=""></img>
+                <Text>{props.book?.about}</Text>
+                <Text>{props.book?.author}</Text>
             </div>
         </div>
-    )     
+    )
 }
 
-export default AboutBook
+const mapDispatchToProps = {
+    getBookById
+
+}
+
+const mapStateToProps = state => {
+    return {
+        book : state.books.bookById
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AboutBook)

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { connect } from 'react-redux'
 
 import { Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
@@ -16,15 +15,15 @@ const Book = (props) => {
                 hoverable
                 cover={<img alt="example" src={props.book.cover} />}
             >
-                <Button 
-                    type="primary" 
-                    icon={<SearchOutlined />} 
-                >
-                    <Link to={`/about/${props.book.id}`}>Просмотреть</Link>
-                </Button>
-                <Meta 
-                    title={props.book.name} 
-                    description={"Автор: "+props.book.author} 
+                <Link to={`/about/${props.book.id}`}>
+                    <Button
+                        type="primary"
+                        icon={<SearchOutlined />}
+                    />
+                </Link>
+                <Meta
+                    title={props.book.name}
+                    description={"Автор: "+props.book.author}
                 />
             </Card>
         </div>
