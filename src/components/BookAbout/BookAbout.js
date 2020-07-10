@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import {connect} from 'react-redux'
 
-import { Typography, Button } from 'antd';
+import { Typography, Button, Card  } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import './BookAbout.scss'
 import { getBookById } from '../../store/actions/actions'
@@ -17,18 +17,23 @@ const AboutBook = (props) => {
 
     return (
         <div className="about-book">
-            <Link to="/">
-                <Button
-                    type="primary"
-                    icon={<ArrowLeftOutlined />}
-                />
-            </Link>
-            <div>
-                <Title>{props.book?.name}</Title>
-                <img src={props.book?.cover} alt=""></img>
-                <Text>{props.book?.about}</Text>
-                <Text>{props.book?.author}</Text>
-            </div>
+            <Card title={props.book?.name}>
+                <div className="about-book-btn">
+                    <Link to="/">
+                        <Button
+                            type="primary"
+                            icon={<ArrowLeftOutlined />}
+                        />
+                    </Link>
+                </div>
+                <div className="about-book-content">
+                    <img src={props.book?.cover} alt=""></img>
+                    <div className="about-book-content-text">
+                        {props.book?.about}
+                        <Text>Автор: {props.book?.author}</Text>
+                    </div>
+                </div>
+            </Card>
         </div>
     )
 }
