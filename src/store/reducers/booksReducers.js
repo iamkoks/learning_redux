@@ -1,4 +1,4 @@
-import { CREATE_BOOK, GET_BOOK_BY_ID } from "../types/types"
+import { CREATE_BOOK, GET_BOOK_BY_ID } from "../types/books"
 
 
 const initialState = {

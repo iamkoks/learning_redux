@@ -1,4 +1,4 @@
-import { GET_MODAL } from "../types/types"
+import { GET_MODAL } from "../types/modal"
 
 
 const initialState = {
