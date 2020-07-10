@@ -2,12 +2,23 @@
     a {
         width: 10px !important;
     }
-    .ant-button-primary {
-        margin-left: 20px !important;
-        margin-bottom: 20px ;
-    }
+
     img{
         height: 500px;
         width: 350px;
+    }
+
+    .about-book-content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+
+        .about-book-content-text {
+            text-align:justify;
+            margin-left: 20px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
