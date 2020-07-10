@@ -1,4 +1,4 @@
-import { GET_CAROUSEL } from "../types/types"
+import { GET_CAROUSEL } from "../types/carousel"
 
 const initialState = {
     carousels:
