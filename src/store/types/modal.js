@@ -1,1 +1,0 @@
-export const GET_MODAL = 'MODAL/GET MODAL';

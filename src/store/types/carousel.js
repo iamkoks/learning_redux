@@ -1,1 +1,0 @@
-export const GET_CAROUSEL = 'CARUSEL/GET CAROUSEL';

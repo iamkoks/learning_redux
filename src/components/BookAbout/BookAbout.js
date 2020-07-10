@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import { Typography, Button, Card  } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import './BookAbout.scss'
-import { getBookById } from '../../store/actions/books'
+import { getBookById } from '../../store/actions/actions'
 
 const { Title, Text } = Typography;
 
@@ -30,7 +30,7 @@ const AboutBook = (props) => {
                     <img src={props.book?.cover} alt=""></img>
                     <div className="about-book-content-text">
                         {props.book?.about}
-                        <Text strong>Автор: {props.book?.author}</Text>
+                        <Text>Автор: {props.book?.author}</Text>
                     </div>
                 </div>
             </Card>
