@@ -18,9 +18,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "webpack-dev-server --watch",
+    "api": "json-server --watch db.json"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "json-server": "^0.16.1",
     "terser-brunch": "^4.0.0"
   }
 }
