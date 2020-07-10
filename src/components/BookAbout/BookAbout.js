@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import { Typography, Button, Card  } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import './BookAbout.scss'
-import { getBookById } from '../../store/actions/actions'
+import { getBookById } from '../../store/actions/books'
 
 const { Title, Text } = Typography;
 
