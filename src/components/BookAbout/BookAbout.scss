@@ -1,4 +1,7 @@
 .about-book {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     a {
         width: 10px !important;
     }
@@ -9,6 +12,7 @@
     }
 
     .about-book-content {
+        margin-left: 100px;
         margin-top: 20px;
         display: flex;
         flex-direction: row;

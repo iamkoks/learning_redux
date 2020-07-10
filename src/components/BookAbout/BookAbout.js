@@ -30,7 +30,7 @@ const AboutBook = (props) => {
                     <img src={props.book?.cover} alt=""></img>
                     <div className="about-book-content-text">
                         {props.book?.about}
-                        <Text>Автор: {props.book?.author}</Text>
+                        <Text strong>Автор: {props.book?.author}</Text>
                     </div>
                 </div>
             </Card>
